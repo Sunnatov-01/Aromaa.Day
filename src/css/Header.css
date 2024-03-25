@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 20px 40px;
+}
+.headerLogoImg{
+    width: 100px;
+}
+.headerUl{
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 0 60px 0 0 ;
+}
+.headerLink{
+    text-decoration: none;
+    color: white;
+}
+.headerLink {
+    position: relative;
+    display: inline-block;
+  }
+
+  .headerLink::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white; /* Adjust color as needed */
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  .headerLink:hover::after {
+    transform: scaleX(1);
+  }
+
+  /* Optional: Adjust hover effect */
+  .headerLink:hover {
+    color: white; /* Change text color on hover */
+  }
+  /* .headerUnderlineLink{
+    text-decoration-line: underline;
+  } */
+  .headerUnderlineLink {
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+.headerUnderlineLink::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust the position of the line as needed */
+    width: 100%; /* Ensures the line spans the width of the text */
+    border-bottom: 3px solid white; /* You can adjust the color and thickness as needed */
+}
+
+@media (max-width: 447px){
+  .header{
+    padding: 10px 20px;
+}
+.headerLogoImg{
+  width: 50px;
+}
+.headerUl{
+    gap: 15px;
+    font-size: 10px;
+    padding: 0 30px 0 0 ;
+}
+}
+@media (min-width: 447.1px) and (max-width:769px){
+  .header{
+    padding: 15px 30px;
+}
+.headerLogoImg{
+  width: 70px;
+}
+.headerUl{
+    gap: 16px;
+    font-size: 12px;
+    padding: 0 40px 0 0 ;
+}
+}
+@media (min-width: 769.1px) and (max-width:990px){
+  .header{
+    padding: 20px 40px;
+}
+.headerLogoImg{
+  width: 90px;
+}
+.headerUl{
+    gap: 20px;
+    font-size: 16px;
+    padding: 0 50px 0 0 ;
+}
+}

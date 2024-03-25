@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.MainPage{
+    height: 100vh;
+    background-image: url('../images/bgImage.jpg');
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.mainPageFirst{
+    height: 70vh;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainPageB{
+    color: white;
+    font-family: sans-serif;
+    font-size: 50px;
+}
+.mainPageB, .mainPageP {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .mainPageP{
+    font-size: 30px;
+    color: white;
+    font-family: sans-serif;
+  }
+  .mainPageSecond{
+    margin-top: 30px;
+    background-image: url('../images/bodyBgImage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .companyH{
+    width: 60%;
+    padding: 15px 80px;
+    font-size: 40px;
+    font-family: sans-serif;
+    color: white;
+  }
+  .companyLogo{
+    width: 150px;
+    border-radius: 15px;
+  }
+  .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 15px 0 80px 0;
+  }
+  .card{
+    width: 200px;
+    height: 200px;
+    transition: all 0.2s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgb(201, 201, 201);
+    cursor: pointer;
+  }
+  .card:hover {
+    width: 220px;
+    height: 220px;
+    transition: all 0.2s linear;
+  }
+  .card:hover img{
+    width: 170px;
+    transition: all 0.2s linear;
+  }
+.infoCards{
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.infoCard{
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    background-color: rgba(203, 203, 203, 0.311);
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgb(114, 114, 114);
+    cursor: pointer;
+}
+.infoCardImg{
+    width: 70px;
+}
+.infoCardP{
+    color: white;
+    font-family: sans-serif;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+@media (max-width:447px) {
+    .MainPage{
+        height: 100vh;
+    }
+    .mainPageFirst{
+        height: 70vh;
+        gap: 10px;
+    }
+    .mainPageB{
+        color: white;
+        font-family: sans-serif;
+        font-size: 18px;
+    }
+      .mainPageP{
+        font-size: 12px;
+        color: white;
+        font-family: sans-serif;
+      }
+      .mainPageSecond{
+        background-image: url('../images/smallPhoto.jpg');
+        margin-top: 45px;
+        height: 100%;
+        padding: 10px 0;
+      }
+      .companyH{
+        width: 80%;
+        padding: 7px 40px;
+        font-size: 14px;
+      }
+      .companyLogo{
+        width: 75px;
+        border-radius: 8px;
+      }
+      .cards{
+        gap: 15px;
+        padding: 8px 0 40px 0;
+      }
+      .card{
+        width: 100px;
+        height: 100px;
+        border-radius: 8px;
+      }
+      .card:hover {
+        width: 110px;
+        height: 110px;
+      }
+      .card:hover img{
+        width: 85px;
+      }
+    .infoCards{
+        gap: 25px;
+        margin-top: 20px;
+    }
+    .infoCard{
+        width: 180px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .infoCardImg{
+        width: 35px;
+    }
+    .infoCardP{
+        padding: 10px;
+        font-size: 9px;
+    }
+}
+@media (min-width:447.1px) and (max-width:769px) {
+    .mainPageFirst{
+        gap: 20px;
+    }
+    .mainPageB{
+        font-size: 22px;
+    }
+      .mainPageP{
+        font-size: 14px;
+      }
+      .mainPageSecond{
+        margin-top: 55px;
+        padding: 15px 0;
+      }
+      .companyH{
+        width: 80%;
+        padding: 10px 50px;
+        font-size: 16px;
+      }
+      .companyLogo{
+        width: 85px;
+        border-radius: 8px;
+      }
+      .cards{
+        gap: 20px;
+        padding: 12px 0 50px 0;
+      }
+      .card{
+        width: 120px;
+        height: 120px;
+        border-radius: 10px;
+      }
+      .card:hover {
+        width: 130px;
+        height: 130px;
+      }
+      .card:hover img{
+        width: 95px;
+      }
+    .infoCards{
+        gap: 35px;
+        margin-top: 30px;
+    }
+    .infoCard{
+        width: 220px;
+        padding: 20px;
+        border-radius: 14px;
+    }
+    .infoCardImg{
+        width: 45px;
+    }
+    .infoCardP{
+        padding: 15px;
+        font-size: 12px;
+    }
+}
+@media (min-width:769.1px) and (max-width:990px) {
+    .mainPageFirst{
+        gap: 26px;
+    }
+    .mainPageB{
+        font-size: 28px;
+    }
+      .mainPageP{
+        font-size: 18px;
+      }
+      .mainPageSecond{
+        margin-top: 0px;
+        padding: 20px 0;
+      }
+      .companyH{
+        width: 80%;
+        padding: 15px 60px;
+        font-size: 18px;
+      }
+      .companyLogo{
+        width: 100px;
+        border-radius: 12px;
+      }
+      .cards{
+        gap: 30px;
+        padding: 16px 0 60px 0;
+      }
+      .card{
+        width: 160px;
+        height: 160px;
+        border-radius: 14px;
+      }
+      .card:hover {
+        width: 180px;
+        height: 180px;
+      }
+      .card:hover img{
+        width: 120px;
+      }
+    .infoCards{
+        gap: 45px;
+        margin-top: 40px;
+    }
+    .infoCard{
+        width: 220px;
+        padding: 20px;
+        border-radius: 14px;
+    }
+    .infoCardImg{
+        width: 45px;
+    }
+    .infoCardP{
+        padding: 15px;
+        font-size: 12px;
+    }
+}
