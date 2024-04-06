@@ -5,6 +5,7 @@ import Meropriyatiya from '../components/Meropriyatiya';
 import Companies from '../components/Companies';
 import Games from '../components/Games';
 import Usluga from '../components/Usluga';
+import Footer from '../components/Footer';
 
 export default function Services() {
   const [active1, setActive1] = useState(true);

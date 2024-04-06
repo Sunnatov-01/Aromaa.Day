@@ -13,6 +13,7 @@ import Woud from '../images/Parfumes/Woud.jpg';
 import Elixir from '../images/Parfumes/Elixir.jpg';
 import Jador from '../images/Parfumes/Jador.webp';
 import '../css/Aromates.css';
+import Footer from '../components/Footer';
 
 export default function Aromates() {
   const aromates = [
