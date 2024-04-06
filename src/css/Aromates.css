@@ -1,0 +1,165 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.aromatesMainDiv{
+  background-image: url('../images/Parfumes/bgImg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.aromatesMainDivTexts{
+  padding: 140px 0 200px 160px;
+}
+.aromatesMainDivAroma{
+  font-size: 50px;
+  font-family: sans-serif;
+  color: white;
+}
+.aromatesMainDivP{
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+}
+.aromatesBody{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
+  background-color: antiquewhite;
+}
+.aromatesBodyHeader{
+  font-size: 60px;
+  font-family: sans-serif;
+}
+.aromatesBodyP{
+  width: 80%;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 20px 0;
+}
+.aromates{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.aromatesCards{
+  width: 280px;
+  height: 300px;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 14px;
+  background-color: black;
+}
+.cardImg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 14px;
+  /* z-index: -1; */
+}
+.aromatesBodyH2{
+  font-size: 30px;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 40px 0;
+  z-index: 2;
+}
+.aromatesBodyP2{
+  width: 100%;
+  text-align: start;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 14px;
+  padding: 0 40px;
+  z-index: 2;
+}
+@media (max-width: 447px) {
+  .aromatesMainDivTexts{
+    padding: 70px 0 100px 20px;
+  }
+  .aromatesMainDivAroma{
+    font-size: 20px;
+  }
+  .aromatesMainDivP{
+    font-size: 10px;
+  }
+  .aromatesBody{
+    padding: 30px 0;
+  }
+  .aromatesBodyHeader{
+    font-size: 30px;
+    text-align: center;
+  }
+  .aromatesBodyP{
+    font-size: 10px;
+    padding: 20px 0;
+  }
+  .aromates{
+    padding: 20px;
+    gap: 20px;
+  }
+  .aromatesCards{
+    width: 200px;
+    height: 240px;
+    border-radius: 10px;
+  }
+  .aromatesBodyH2{
+    font-size: 20px;
+    padding: 30px 0;
+  }
+  .aromatesBodyP2{
+    font-size: 12px;
+    padding: 0 20px;
+  }
+}
+@media (min-width:447.1px) and (max-width:769px) {
+  .aromatesMainDivTexts{
+    padding: 70px 0 100px 20px;
+  }
+  .aromatesMainDivAroma{
+    font-size: 20px;
+  }
+  .aromatesMainDivP{
+    font-size: 10px;
+  }
+  .aromatesBody{
+    padding: 30px 0;
+  }
+  .aromatesBodyHeader{
+    font-size: 30px;
+    text-align: center;
+  }
+  .aromatesBodyP{
+    font-size: 10px;
+    padding: 20px 0;
+  }
+  .aromates{
+    padding: 20px;
+    gap: 20px;
+  }
+  .aromatesCards{
+    width: 200px;
+    height: 240px;
+    border-radius: 10px;
+  }
+  .aromatesBodyH2{
+    font-size: 20px;
+    padding: 30px 0;
+  }
+  .aromatesBodyP2{
+    font-size: 12px;
+    padding: 0 20px;
+  }
+}
