@@ -12,6 +12,7 @@ import marvarid from '../images/companies/marvarid.png';
 import Musulmonlaidorasi from '../images/companies/uzbmusulmonlaridorasi.jpg';
 import walktalk from '../images/companies/walktalk.png';
 import warpoint from '../images/companies/warpoint.webp';
+import Footer from '../components/Footer';
 
 export default function MainPage() {
   const companies = [
@@ -126,6 +127,7 @@ export default function MainPage() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
