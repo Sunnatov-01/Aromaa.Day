@@ -115,6 +115,7 @@ export default function Services() {
           {active1 ? <Meropriyatiya /> : active2 ? <Companies /> : active3 ? <Games /> : <Usluga />}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

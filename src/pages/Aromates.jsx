@@ -136,6 +136,7 @@ export default function Aromates() {
           })}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
