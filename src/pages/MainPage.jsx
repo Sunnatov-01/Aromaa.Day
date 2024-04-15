@@ -113,7 +113,7 @@ export default function MainPage() {
           </div>
           <div>
             <h1 className="companyH">
-              На данный момент мы обслужили около 50 клиентов, в том числе:
+              На данный момент мы обслужили около 400 клиентов, в том числе:
             </h1>
             <div className="cards">
               {companies.map((item, index) => {
